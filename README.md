@@ -12,6 +12,7 @@ This program makes your photo as a cartoon material
 
 # 코드 설명
 ![image](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/3b38b50f-8f69-49a3-becf-80181aae030c)
+<br/>
 프로그램의 메인 뼈대는 이와 같습니다.
 등장하는 함수를 소개해드리겠습니다:
 - check_size
@@ -19,12 +20,14 @@ This program makes your photo as a cartoon material
 
 # check_size 함수
 ![image](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/3dc5a8aa-cbaf-43c4-a9eb-169d0d8c6b88)
+<br/>
 이 함수는 입력 image file의 size가 너무 큰 경우를 대비하여
 파일의 height과 width의 합이 일정 크기가 넘어가게 되면 size를 같은 비율로 점점 줄여나가며
 threshold 보다 작은 값을 만족할 때까지 반복합니다.
 
 # cartoonize 함수
 ![image](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/e46ca631-d78d-4a97-a7c0-34a12d6538bb)
+<br/>
 이 함수는 입력 image file을 cartoon화 시키는 작업을 합니다.
 다음 과정을 거칩니다:
 1. image를 BGR에서 Gray Scale로 변환합니다. (흑백 cartoon 느낌 부여)
@@ -33,13 +36,17 @@ threshold 보다 작은 값을 만족할 때까지 반복합니다.
 
 ***
 # 만화 같은 느낌이 잘 표현된 경우:
-![sunny_day](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/2f500380-a219-4bf5-9dc9-d7c353827e3d)
+![sunny_day](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/2f500380-a219-4bf5-9dc9-d7c353827e3d){: width="30%" height="30%"}
+<br/>
 ![image](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/3ae9eec3-8023-41ce-b69e-54a6f57143f6)
+<br/>
 다음 사진과 같은 경우 인물과 배경 등이 테두리 만으로도 선명하게 표현되어 cartoon의 느낌을 잘 전달 해줍니다.
 
 # 아쉬운 경우:
-![blurry_photo](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/7a321bc2-fca7-4633-ad74-b5b394279a6b)
+![blurry_photo](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/7a321bc2-fca7-4633-ad74-b5b394279a6b){: width="30%" height="30%"}
+<br/>
 ![blurry_photo_30_60_limit](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/80d26af9-7988-48a4-8754-d50a89616008)
+<br/>
 다음 사진처럼 흔들린 경우는 객체의 테두리가 모호하여 cartoon느낌이 잘 표현되지 않은 경우입니다.
 밑에서 다시 서술할 예정이지만 cv.Canny의 임계값을 여러 방면으로 조정해보았으나 애초에 흔들린 사진의 경우는 잘 표현되지 못했습니다.
 
