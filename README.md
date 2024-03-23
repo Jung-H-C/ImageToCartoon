@@ -44,7 +44,7 @@ threshold 보다 작은 값을 만족할 때까지 반복합니다.
 
 # 아쉬운 경우:
 <img src="/blurry_photo.jpg" width="30%" height="30%">
-<img src="/blurry_photo_30_60_limit.PNG>
+<img src="/blurry_photo_30_60_limit.PNG">
   
 <br/>
 다음 사진처럼 흔들린 경우는 객체의 테두리가 모호하여 cartoon느낌이 잘 표현되지 않은 경우입니다.
