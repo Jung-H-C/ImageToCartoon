@@ -43,7 +43,7 @@ threshold 보다 작은 값을 만족할 때까지 반복합니다.
 다음 사진과 같은 경우 인물과 배경 등이 테두리 만으로도 선명하게 표현되어 cartoon의 느낌을 잘 전달 해줍니다.
 
 # 아쉬운 경우:
-![blurry_photo](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/7a321bc2-fca7-4633-ad74-b5b394279a6b){: width="30%" height="30%"}
+<img src="C:/Users/XOTOURLLIFE/Desktop/ImageToCartoon/ImageToCartoon" width="30%" height="30%">
 <br/>
 ![blurry_photo_30_60_limit](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/80d26af9-7988-48a4-8754-d50a89616008)
 <br/>
