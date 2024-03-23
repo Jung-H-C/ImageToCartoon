@@ -37,12 +37,15 @@ threshold 보다 작은 값을 만족할 때까지 반복합니다.
 ***
 # 만화 같은 느낌이 잘 표현된 경우:
 <img src="/sunny_day.jpg" width="30%" height="30%">
-![image](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/3ae9eec3-8023-41ce-b69e-54a6f57143f6)
+![sunny_day_30_60](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/22d6f3a6-6e0a-47ad-a8ea-c4482cba4f1e)
+
 <br/>
 다음 사진과 같은 경우 인물과 배경 등이 테두리 만으로도 선명하게 표현되어 cartoon의 느낌을 잘 전달 해줍니다.
 
 # 아쉬운 경우:
 <img src="/blurry_photo.jpg" width="30%" height="30%">
+![blurry_photo_30_60_limit](https://github.com/Jung-H-C/ImageToCartoon/assets/101037538/496de45f-49ae-435a-b9c1-e7d965b5cff4)
+
 <br/>
 다음 사진처럼 흔들린 경우는 객체의 테두리가 모호하여 cartoon느낌이 잘 표현되지 않은 경우입니다.
 밑에서 다시 서술할 예정이지만 cv.Canny의 임계값을 여러 방면으로 조정해보았으나 애초에 흔들린 사진의 경우는 잘 표현되지 못했습니다.
